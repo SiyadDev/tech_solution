@@ -61,17 +61,17 @@ export function Hero() {
             initial="hidden"
             animate="visible"
             variants={slideInLeft}
-            className="text-center lg:text-left"
+            className="text-center lg:text-left flex flex-col gap-6"
           >
             <motion.h1
               variants={fadeInUp}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
             >
               {BUSINESS_INFO.tagline}
             </motion.h1>
             <motion.p
               variants={fadeInUp}
-              className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed"
+              className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed"
             >
               {BUSINESS_INFO.description}
             </motion.p>

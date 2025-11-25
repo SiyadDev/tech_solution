@@ -14,9 +14,9 @@ export function Contact() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeInUp}
-        className="text-center mb-16"
+        className="text-center mb-16 flex flex-col gap-4"
       >
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           Get In Touch
         </h2>
         <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -34,10 +34,10 @@ export function Contact() {
         >
           <form className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl">
             <div className="flex flex-col gap-6">
-              <div>
+              <div className="flex flex-col gap-2">
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300"
                 >
                   Name
                 </label>
@@ -49,10 +49,10 @@ export function Contact() {
                   placeholder="Your Name"
                 />
               </div>
-              <div>
+              <div className="flex flex-col gap-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300"
                 >
                   Email
                 </label>
@@ -64,10 +64,10 @@ export function Contact() {
                   placeholder="your.email@example.com"
                 />
               </div>
-              <div>
+              <div className="flex flex-col gap-2">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300"
                 >
                   Message
                 </label>
@@ -94,18 +94,18 @@ export function Contact() {
           variants={slideInRight}
           className="flex flex-col gap-8"
         >
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl">
-            <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl flex flex-col gap-6">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
               Contact Information
             </h3>
             <div className="flex flex-col gap-6">
               <motion.div
                 whileHover={{ x: 5 }}
-                className="flex items-start"
+                className="flex items-start gap-4"
               >
-                <div className="text-2xl mr-4">📧</div>
-                <div>
-                  <div className="font-semibold text-gray-900 dark:text-gray-100 mb-1">
+                <div className="text-2xl">📧</div>
+                <div className="flex flex-col gap-1">
+                  <div className="font-semibold text-gray-900 dark:text-gray-100">
                     Email
                   </div>
                   <a
@@ -118,11 +118,11 @@ export function Contact() {
               </motion.div>
               <motion.div
                 whileHover={{ x: 5 }}
-                className="flex items-start"
+                className="flex items-start gap-4"
               >
-                <div className="text-2xl mr-4">📞</div>
-                <div>
-                  <div className="font-semibold text-gray-900 dark:text-gray-100 mb-1">
+                <div className="text-2xl">📞</div>
+                <div className="flex flex-col gap-1">
+                  <div className="font-semibold text-gray-900 dark:text-gray-100">
                     Phone
                   </div>
                   <a
@@ -135,11 +135,11 @@ export function Contact() {
               </motion.div>
               <motion.div
                 whileHover={{ x: 5 }}
-                className="flex items-start"
+                className="flex items-start gap-4"
               >
-                <div className="text-2xl mr-4">📍</div>
-                <div>
-                  <div className="font-semibold text-gray-900 dark:text-gray-100 mb-1">
+                <div className="text-2xl">📍</div>
+                <div className="flex flex-col gap-1">
+                  <div className="font-semibold text-gray-900 dark:text-gray-100">
                     Address
                   </div>
                   <div className="text-gray-600 dark:text-gray-400">
@@ -151,12 +151,12 @@ export function Contact() {
           </div>
 
           <motion.div
-            className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl p-8 text-white shadow-xl"
+            className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl p-8 text-white shadow-xl flex flex-col gap-6"
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
-            <h3 className="text-2xl font-bold mb-4">Let's Work Together</h3>
-            <p className="mb-6 opacity-90">
+            <h3 className="text-2xl font-bold">Let's Work Together</h3>
+            <p className="opacity-90">
               We're always excited to take on new projects and help businesses grow.
               Reach out to us today!
             </p>

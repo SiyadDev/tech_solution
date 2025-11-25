@@ -14,27 +14,28 @@ export function About() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={slideInLeft}
+          className="flex flex-col gap-6"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             About Us
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
             {BUSINESS_INFO.description}
           </p>
-          <p className="text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
             With years of experience in the industry, we've helped hundreds of businesses
             transform their digital presence and achieve remarkable growth. Our team of
             experts is dedicated to delivering excellence in every project.
           </p>
-          <div className="grid grid-cols-2 gap-6 mt-8">
+          <div className="grid grid-cols-2 gap-6">
             <motion.div
               variants={fadeInUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="text-center p-4 bg-white dark:bg-gray-700 rounded-xl"
+              className="text-center p-4 bg-white dark:bg-gray-700 rounded-xl flex flex-col gap-2"
             >
-              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400">
                 500+
               </div>
               <div className="text-gray-600 dark:text-gray-400">Projects Completed</div>
@@ -45,9 +46,9 @@ export function About() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-center p-4 bg-white dark:bg-gray-700 rounded-xl"
+              className="text-center p-4 bg-white dark:bg-gray-700 rounded-xl flex flex-col gap-2"
             >
-              <div className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">
+              <div className="text-4xl font-bold text-purple-600 dark:text-purple-400">
                 98%
               </div>
               <div className="text-gray-600 dark:text-gray-400">Client Satisfaction</div>

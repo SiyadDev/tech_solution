@@ -18,7 +18,7 @@ export function Card({ children, className = '', delay = 0 }: CardProps) {
       viewport={{ once: true, amount: 0.3 }}
       variants={scaleIn}
       transition={{ delay }}
-      className={`bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 ${className}`}
+      className={`bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col ${className}`}
     >
       {children}
     </motion.div>

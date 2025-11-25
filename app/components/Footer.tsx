@@ -17,14 +17,14 @@ export function Footer() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <div className="flex flex-col gap-4">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               {BUSINESS_INFO.name}
             </h3>
-            <p className="text-gray-400 mb-4">{BUSINESS_INFO.description}</p>
+            <p className="text-gray-400">{BUSINESS_INFO.description}</p>
           </div>
-          <div>
-            <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+          <div className="flex flex-col gap-4">
+            <h4 className="text-lg font-semibold text-white">Quick Links</h4>
             <ul className="flex flex-col gap-2">
               {NAV_ITEMS.map((item) => (
                 <li key={item.href}>
@@ -38,8 +38,8 @@ export function Footer() {
               ))}
             </ul>
           </div>
-          <div>
-            <h4 className="text-lg font-semibold mb-4 text-white">Contact</h4>
+          <div className="flex flex-col gap-4">
+            <h4 className="text-lg font-semibold text-white">Contact</h4>
             <ul className="flex flex-col gap-2 text-gray-400">
               <li>{BUSINESS_INFO.email}</li>
               <li>{BUSINESS_INFO.phone}</li>
