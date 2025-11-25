@@ -33,7 +33,7 @@ export function Contact() {
           variants={slideInLeft}
         >
           <form className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl">
-            <div className="space-y-6">
+            <div className="flex flex-col gap-6">
               <div>
                 <label
                   htmlFor="name"
@@ -92,13 +92,13 @@ export function Contact() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={slideInRight}
-          className="space-y-8"
+          className="flex flex-col gap-8"
         >
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl">
             <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
               Contact Information
             </h3>
-            <div className="space-y-6">
+            <div className="flex flex-col gap-6">
               <motion.div
                 whileHover={{ x: 5 }}
                 className="flex items-start"

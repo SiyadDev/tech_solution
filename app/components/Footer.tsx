@@ -25,7 +25,7 @@ export function Footer() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
-            <ul className="space-y-2">
+            <ul className="flex flex-col gap-2">
               {NAV_ITEMS.map((item) => (
                 <li key={item.href}>
                   <a
@@ -40,7 +40,7 @@ export function Footer() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Contact</h4>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="flex flex-col gap-2 text-gray-400">
               <li>{BUSINESS_INFO.email}</li>
               <li>{BUSINESS_INFO.phone}</li>
               <li>{BUSINESS_INFO.address}</li>

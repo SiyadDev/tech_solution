@@ -48,7 +48,7 @@ export function Navbar() {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center gap-8">
             {NAV_ITEMS.map((item) => (
               <motion.a
                 key={item.href}
@@ -91,7 +91,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden py-4 space-y-4"
+            className="md:hidden py-4 flex flex-col gap-4"
           >
             {NAV_ITEMS.map((item) => (
               <a
